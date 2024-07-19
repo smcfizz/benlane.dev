@@ -1,5 +1,3 @@
-import { BlogPosts } from 'app/components/posts'
-
 export default function Page() {
   return (
       <section>
@@ -14,10 +12,10 @@ export default function Page() {
           footer below.`}
         </p>
         <p className="mb-4">
-          {`I am a Software Engineer who is easily excited by the potential for novel
-           solutions to challenging and important problems presented by the field
-           of computer science. Ever since I hacked together my first program, I was 
-           hooked on the endless possibilities computers represented.`}
+          {`I am a Software Engineer who is constantly excited by novel solutions to 
+          challenging and important real-world problems through the field of computer 
+          science. Ever since I hacked together my first computer program, I was hooked 
+          on the endless possibilities computers represented.`}
         </p>
         <p className="mb-4">
           {`Since then I have dedicated my time to learning more about the world of modern
