@@ -3,9 +3,8 @@
 import React, { useEffect, useMemo } from 'react';
 import Particles, {initParticlesEngine} from "@tsparticles/react";
 import {Container} from "@tsparticles/engine";
-import {loadSlim} from "@tsparticles/slim";
+import {loadSlim,} from "@tsparticles/slim";
 import {loadEmittersPlugin} from "@tsparticles/plugin-emitters";
-import {loadParallaxMover} from "@tsparticles/move-parallax";
 
 function Starfield() {
     const [init, setInit] = React.useState(false);
@@ -14,7 +13,6 @@ function Starfield() {
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
             await loadEmittersPlugin(engine);
-            await loadParallaxMover(engine);
         }).then(() => {
             setInit(true);
         });
