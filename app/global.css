@@ -148,3 +148,7 @@ table {
 .title {
   text-wrap: balance;
 }
+
+#tsparticles {
+  z-index: -1;
+}
