@@ -7,8 +7,8 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
-import Starfield from "./particles";
-import ContentZone from "./components/content-zone";
+import ContentZone from './components/content-zone';
+import Starfield from './components/starfield';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -56,8 +56,8 @@ export default function RootLayout({
     >
       <body className="antialiased max-w-5xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Starfield />
           <Navbar />
+          <Starfield />
           <ContentZone>
             {children}
             <Footer />
