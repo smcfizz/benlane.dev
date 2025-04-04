@@ -7,10 +7,6 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "4.0.0-alpha.13",
-    "@tsparticles/engine": "^3.8.1",
-    "@tsparticles/plugin-emitters": "^3.8.1",
-    "@tsparticles/react": "^3.0.0",
-    "@tsparticles/slim": "^3.8.1",
     "@types/node": "20.11.17",
     "@types/react": "18.2.55",
     "@types/react-dom": "18.2.19",
