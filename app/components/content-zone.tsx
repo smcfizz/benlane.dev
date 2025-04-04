@@ -1,3 +1,3 @@
 export default function ContentZone({ children }) {
-    return <div className="prose dark:prose-invert bg-black/75 px-8">{children}</div>
+    return <div className="dark:prose-invert bg-black/50 px-8">{children}</div>
 }
