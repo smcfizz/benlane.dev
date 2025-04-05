@@ -1,0 +1,92 @@
+---
+title: 'Example Post Please Ignore'
+publishedAt: '2024-07-25'
+summary: 'A playground for getting used to MDX and all the features it has to offer.'
+---
+
+## Example Article
+
+Here is an example program listing.
+
+```c++
+#include <iostream>
+
+void main() {
+    cout << "Hello world!" << endl;
+}
+```
+
+We can create internal links like so: [projects](/projects).
+
+Compared to an [external link](https://google.com/).
+
+*Notice how internal links redirect the current tab, while external links open in a new tab.*
+
+MDX also has support for JSX, so it can directly render entire components! Here's a small example:
+
+<h1>Heading!</h1>
+
+<abbr title="HyperText Markup Language">HTML</abbr> is a lovely language.
+
+<section>
+    And here is *markdown* in **JSX**!
+</section>
+
+*Notice the difference between the first heading on this page and the one above with respect to URI fragments.*
+
+We can also import our custom components and render them directly in our MDX files.
+
+Here is our list of blog posts from our [blogs](/blogs) page:
+<BlogPosts/>
+
+And here is a custom `Table` component:
+<Table
+    data={{
+        headers: ['Header One', 'Header Two', 'Header Three'],
+        rows: [
+            ['Value 1', 'Value 2', 'Value 3'],
+            ['Value 4', 'Value 5', 'Value 6'],
+            ['Value 7', 'Value 8', 'Value 9'],
+        ],
+    }}
+/>
+
+*Just be sure that any custom components you want to use are imported in the <b>JSX</b> file that you will be using to render the MDX!*
+
+## More fun
+
+Additionally, MDX also supports JavaScript [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)s like so:
+
+```javascript
+{(function () {
+  const guess = Math.random()
+
+  if (guess > 0.66) {
+    return <span style={{color: 'tomato'}}>Look at us.</span>
+  }
+
+  if (guess > 0.33) {
+    return <span style={{color: 'violet'}}>Who would have guessed?!</span>
+  }
+
+  return <span style={{color: 'goldenrod'}}>Not me.</span>
+})()}
+```
+
+Which results in the following:
+
+{(function () {
+const guess = Math.random()
+
+if (guess > 0.66) {
+return <span style={{color: 'tomato'}}>Look at us.</span>
+}
+
+if (guess > 0.33) {
+return <span style={{color: 'violet'}}>Who would have guessed?!</span>
+}
+
+return <span style={{color: 'goldenrod'}}>Not me.</span>
+})()}
+
+There are tons more cool things that can be done with MDX. You can find more [here](https://mdxjs.com/docs/what-is-mdx/)!
