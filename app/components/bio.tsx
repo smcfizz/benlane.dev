@@ -9,7 +9,7 @@ export default function Bio() {
                 Benjamin Lane
             </h1>
             <div className="flex md:flex-row sm:flex-col gap-8">
-                <div className="pt-4 w-1/3 flex flex-col items-center mt-auto mb-auto">
+                <div className="pt-4 w-1/3 flex flex-col items-center my-auto">
                     <Image src="/images/headshot.png" className="rounded-full" width={512} height={512} alt="avatar"/>
                     <SocialArray github email linkedin/>
                 </div>
