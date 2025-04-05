@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function ArrowIcon() {
   return (
     <svg
@@ -21,35 +23,56 @@ export default function Footer() {
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="/rss"
+              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="mailto:ben@benlane.dev"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
+            <p className="ml-2 h-7">email</p>
           </a>
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/smcfizz"
+              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/benjamin-lane-b39abb110/"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">linkedin</p>
+          </a>
+        </li>
+        <li>
+          <a
+              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/smcfizz"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">github</p>
           </a>
         </li>
         <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="mailto:ben@benlane.dev"
+          <Link
+              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+              rel="noopener noreferrer"
+              href="/now"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">email</p>
+            <p className="ml-2 h-7">now</p>
+          </Link>
+        </li>
+        <li>
+          <a
+              className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="/rss"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">rss</p>
           </a>
         </li>
       </ul>

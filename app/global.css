@@ -47,8 +47,17 @@ html {
   @apply visible;
 }
 
+a:hover {
+  color: rgb(153, 128, 236);
+}
+
 .prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+  @apply transition-all decoration-[9980ECFF] dark:decoration-[9980ECFF] underline-offset-2 decoration-[0.1em];
+  color: rgb(153, 128, 236);
+}
+
+.prose a:hover {
+  @apply underline;
 }
 
 .prose .anchor:after {
@@ -147,8 +156,4 @@ table {
 
 .title {
   text-wrap: balance;
-}
-
-#tsparticles {
-  z-index: -1;
 }

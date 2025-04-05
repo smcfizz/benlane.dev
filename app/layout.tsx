@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: 'Benjamin Lane',
     template: '%s | Next.js Portfolio Starter',
   },
-  description: 'This is my portfolio.',
+  description: 'Benjamin Lane\'s portfolio.',
   openGraph: {
     title: 'Benjamin Lane\'s Portfolio',
     description: 'This is the personal portfolio of Benjamin Lane.',
