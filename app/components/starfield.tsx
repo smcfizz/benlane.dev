@@ -1,16 +1,17 @@
 'use client';
 
-import Starfield from '@smcfizz/starfield.js';
 import {useEffect, useRef} from "react";
 
-export default function Starfield_r() {
+export default function Starfield() {
     const executed = useRef(false);
 
     useEffect(() => {
         if (executed.current) return;
         executed.current = true;
-        const sf = new Starfield({});
-        console.log('sf', sf);
+        import('@smcfizz/starfield.js').then((module) => {
+            const Starfield = module.default;
+            const sf = new Starfield({});
+        });
     }, []);
 
     return <></>;
