@@ -8,7 +8,7 @@ export default function Bio() {
             <h1>
                 Benjamin Lane
             </h1>
-            <div className="flex md:flex-row sm:flex-col gap-8">
+            <div className="flex sm:flex-row flex-col gap-8">
                 <div className="pt-4 w-1/3 flex flex-col items-center my-auto">
                     <Image src="/images/headshot.png" className="rounded-full" width={512} height={512} alt="avatar"/>
                     <SocialArray github email linkedin/>
@@ -30,14 +30,13 @@ export default function Bio() {
                 working on.`}
                     </p>
                     <p>
-                        {`The main goal of this site is to provide a place for Ben to share his thoughts and 
-                help drive efforts to be more intentional about pursuing his interests and documenting his 
-                projects as he explores solutions to problems he encounters in day-to-day life to build a portfolio
-                that showcases his skills and expertise over time.`}
+                        {`This is space for Ben to think out loud, solve problems, and show what he can do. The 
+                goal is to create a growing portfolio built on real interests and real work.`}
                     </p>
                     <p>
-                        {`A few of Ben's other personal interests include studying Japanese, skiing, bowling, 
-                Dungeons & Dragons, 3D printing, and `} <a href="https://rocketleague.com">Rocket League</a>{`.`}
+                        {`A few of Ben's other personal interests outside of software development include studying 
+                Japanese, skiing, bowling, Dungeons & Dragons, 3D printing, and `}
+                <a href="https://rocketleague.com">Rocket League</a>{`.`}
                     </p>
                 </div>
             </div>
